@@ -4,13 +4,13 @@
 
   <groupId>com.cloudera.science</groupId>
   <artifactId>avro2parquet</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <packaging>jar</packaging>
 
   <name>avro2parquet</name>
 
   <properties>
-  	<!--<hadoop.version>1.0.4</hadoop.version>-->
+      <!--<hadoop.version>1.0.4</hadoop.version>-->
     <hadoop.version>2.6.0-cdh5.4.2</hadoop.version>
     <guava.version>13.0.1</guava.version>
     <junit.version>4.8.2</junit.version>
@@ -18,12 +18,12 @@
 
   <dependencies>
 
-	<!-- <dependency>
-		<groupId>commons-httpclient</groupId>
-		<artifactId>commons-httpclient</artifactId>
-		<version>3.1</version>
-	</dependency> -->
-  
+    <!-- <dependency>
+        <groupId>commons-httpclient</groupId>
+        <artifactId>commons-httpclient</artifactId>
+        <version>3.1</version>
+    </dependency> -->
+
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-client</artifactId>
@@ -43,39 +43,39 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-    
+
     <dependency>
-	  <groupId>org.hamcrest</groupId>
-	  <artifactId>hamcrest-all</artifactId>
-	  <version>1.3</version>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-all</artifactId>
+      <version>1.3</version>
     </dependency>
 
-	<!-- <dependency>
-		<groupId>org.apache.avro</groupId>
-		<artifactId>avro</artifactId>
-		<version>1.7.4</version>
-		<classifier>hadoop2</classifier>
-	</dependency> -->
+    <!-- <dependency>
+        <groupId>org.apache.avro</groupId>
+        <artifactId>avro</artifactId>
+        <version>1.7.4</version>
+        <classifier>hadoop2</classifier>
+    </dependency> -->
 
-	<dependency>
-		<groupId>org.apache.avro</groupId>
-		<artifactId>avro-mapred</artifactId>
-		<version>1.7.6-cdh5.4.2</version>
-		<classifier>hadoop2</classifier>
-	</dependency>
+    <dependency>
+        <groupId>org.apache.avro</groupId>
+        <artifactId>avro-mapred</artifactId>
+        <version>1.7.6-cdh5.4.2</version>
+        <classifier>hadoop2</classifier>
+    </dependency>
 
-	<dependency>
-		<groupId>org.codehaus.jackson</groupId>
-		<artifactId>jackson-core-asl</artifactId>
-		<version>1.9.12</version>
-	</dependency>
-	
-	<dependency>
+    <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-core-asl</artifactId>
+        <version>1.9.12</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.twitter</groupId>
       <artifactId>parquet-avro</artifactId>
       <version>1.5.0-cdh5.4.2</version>
     </dependency>
-	<dependency>
+    <dependency>
       <groupId>com.twitter</groupId>
       <artifactId>parquet-column</artifactId>
       <version>1.5.0-cdh5.4.2</version>
@@ -104,7 +104,7 @@
       <name>Cloudera Repos</name>
       <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
     </repository>
-    
+
     <!-- <repository>
       <id>sonatype-nexus-snapshots</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -115,7 +115,7 @@
         <enabled>true</enabled>
       </snapshots>
      </repository> -->
-    
+
   </repositories>
 
   <build>
